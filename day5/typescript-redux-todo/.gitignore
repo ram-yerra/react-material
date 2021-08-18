@@ -1,0 +1,7 @@
+build/
+cypress/videos/
+cypress/fixtures/
+cypress/screenshots/
+node_modules/
+instrumented/
+.eslintcache

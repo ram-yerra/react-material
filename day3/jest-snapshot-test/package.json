@@ -1,0 +1,22 @@
+{
+  "name": "jest-snapshot-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Link.js",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

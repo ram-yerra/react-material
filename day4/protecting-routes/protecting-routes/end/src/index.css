@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  position: absolute;
+  width: 750px;
+  height: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgb(65, 63, 63);
+  color: white;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid red;
+}
+
+.navigation {
+  font-size: 18px;
+  position: absolute;
+  top: 18px;
+  left: 300px;
+}
+
+.navigation > a {
+  color: white;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.content {
+  position: relative;
+  color: white;
+  width: 750px;
+  height: 430px;
+  padding: 10px;
+  box-sizing: border-box;
+  top: 20px;
+}
+
+.home {
+  position: relative;
+  font-size: 40px;
+  padding: 30px;
+  top: 35px;
+  text-align: justify;
+}
+
+.catalog {
+  position: relative;
+  height: 430px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.catalog > a {
+  border: none;
+  color: transparent;
+}
+
+.book-item {
+  position: relative;
+  border: 1px solid;
+  width: 150px;
+  height: 180px;
+  display: block;
+  float: left;
+  margin: 13px;
+}
+
+.book-thumb {
+  position: absolute;
+  width: 150px;
+  height: 180px;
+}
+
+.bd-thumb {
+  position: absolute;
+  width: 150px;
+  height: 180px;
+  top: 20px;
+  left: 40px;
+  border: 2px solid white;
+}
+
+.bd-title {
+  position: relative;
+  width: 500px;
+
+  left: 210px;
+  font-size: 28px;
+  font-weight: bold;
+  top: 10px;
+}
+
+.bd-authors {
+  position: relative;
+  left: 210px;
+  font-size: 20px;
+  top: 15px;
+}
+
+.bd-isbn {
+  position: absolute;
+  left: 220px;
+  font-size: 16px;
+  top: 165px;
+}
+
+.bd-pg-count {
+  position: absolute;
+  left: 220px;
+  font-size: 16px;
+  top: 185px;
+}
+
+.bd-short-desc {
+  position: absolute;
+  left: 20px;
+  font-size: 13px;
+  width: 700px;
+  padding: 15px;
+  box-sizing: border-box;
+  top: 200px;
+  height: 220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.secret > h3 {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  font-size: 55px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.secret > .book-details {
+  position: relative;
+  top: 50px;
+  left: 90px;
+}
+
+.login > input {
+  font-size: 30px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 60px;
+  width: 500px;
+  margin: auto;
+}

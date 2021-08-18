@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React Training</title>
+    <script>
+        print = function(msg){
+            return function() {
+                console.log(msg);
+            }
+        }
+		secondCounter = function (origin, count) {
+            // this would not work if we are returning anything from the print function
+            /*for (var i = 0; i < count; i++) {               
+                setTimeout(print(origin + " : " + i + " seconds are over after click."), i*1000);
+            }*/
+            // this would work since we are using let variable which enables block scoping even without the return in print function
+            /*for (let i = 0; i < count; i++) {               
+                setTimeout(function() {
+                    print(origin + " : " + i + " seconds are over after click.");
+                }, i*1000);
+            }*/
+            // this will work since we have modified the print function to return the function which prints the msg
+            for (var i = 0; i < count; i++) {               
+                setTimeout(print(origin + " : " + i + " seconds are over after click."), i*1000);
+            }
+		}    
+    </script>
+</head>
+<body>
+	<form>
+        <input type="text" name="username" value="" placeholder="Enter username" /> <br/><br/>
+        <input type="password" name="password" value="" placeholder="Enter password" /> <br/><br/>
+        <input type="button" value="B1" onclick="secondCounter('B1', 20)"/>
+        <input type="button" value="B2" onclick="secondCounter('B2', 40)" />
+	</form>
+
+</body>
+</html>
+
