@@ -1,0 +1,11 @@
+.form-designer-container {
+    display: flex;
+    .form-designer-wrapper,
+    .add-edit-form-wrapper {
+      flex: 1;
+      padding: 0 10px;
+    }
+    .add-edit-form-wrapper {
+      max-width: 30%;
+    }
+}

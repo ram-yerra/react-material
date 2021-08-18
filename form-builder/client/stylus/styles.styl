@@ -1,0 +1,111 @@
+$font-size = 14px // Example of variables
+
+fonts = Helvetica, Arial, sans-serif
+
+// Example of Hashes
+flexBox = {
+    display: flex,
+    align-items: center,
+    justify-content: space-between
+}
+
+body 
+    height 100%
+    width 100%
+    font $font-size/1.4 fonts // Example of variables usage
+
+.app
+    text-align center
+
+.app-header 
+    {flexBox}  // Example of hashes usage
+    background-color #282c34
+    min-height 60px
+    font-size 1rem
+    padding 0 20px
+    color white
+
+.app-link 
+    color #61dafb
+    cursor pointer
+    &:hover // parent references
+        color #fff
+
+.app-content 
+    padding 20px
+
+.app-loading
+    {flexBox}
+    justify-content center
+    width 100%
+    height 100%
+    height: 100%;  
+    position fixed 
+    top 0 
+    left 0
+    z-index 9999  
+    background: rgba(0, 0, 0, 0.3)
+    .loader
+        display block
+        border 10px solid #f3f3f3
+        border-radius 50%
+        border-top 10px solid #3498db
+        width: 75px
+        height: 75px
+        -webkit-animation spin 2s linear infinite // Safari
+        animation spin 2s linear infinite
+
+.flex-grid 
+    {flexBox} // Example of hashes usage
+    text-align left
+    &.grid-header 
+        background #ccc
+        font-weight 600
+        font-size $font-size    
+    .list-col 
+        {flexBox}        
+        width 25%
+        height 40px
+        padding 0 10px   
+    for colw in 1 .. 10 // Example of range and selector interpolation
+        .list-col-{colw*10}
+            width 10% * colw
+    &.grid-content .list-col 
+        border-bottom 1px solid #eee
+
+.align-left
+    text-align left
+
+.required
+    color red
+    margin-left 3px
+
+.link
+    text-decoration underline
+    color #0070d2
+    cursor pointer
+
+.form-group
+    margin-bottom 1rem
+    .form-check-input
+        margin-top 0.25rem
+
+/*
+* Button css is implemented when you use button class
+* for the element button add className="button"
+*/
+.button
+    background #61dafb
+    color black
+    border none
+    cursor pointer
+    height 30px
+    padding 0 15px
+    margin-left 10px
+    border-radius 100px // Example of interpolation and mixins, refer to mixins.styl
+    &:hover 
+        background rgba(darkturquoise, 0.5)
+    &.secondary-button
+        background #cecece;
+        &:hover
+            background rgba(blue: 206, red: 206, alpha: 0.5, 206) // Example of keyword arguments

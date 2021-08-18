@@ -1,0 +1,25 @@
+.card {
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        a {
+            cursor: pointer;
+        }
+    }
+    .field-order {
+        width: 60%;
+    }
+    .form-check {
+        display: flex;
+        align-items: center;
+    }
+    .form-button-group {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        button {
+            margin-left: 10px;
+        }
+    }
+}

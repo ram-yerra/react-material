@@ -1,0 +1,39 @@
+{
+  "name": "mystarmatchgame",
+  "version": "1.0.0",
+  "description": "Star Match Game using react",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yrkapil/StarMatch.git"
+  },
+  "keywords": [
+    "star",
+    "match"
+  ],
+  "author": "yrkapil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yrkapil/StarMatch/issues"
+  },
+  "homepage": "https://github.com/yrkapil/StarMatch#readme",
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}

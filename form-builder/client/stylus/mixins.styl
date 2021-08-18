@@ -1,0 +1,12 @@
+vendor(prop, args) // Example of mixins
+    -webkit-{prop} args
+    -moz-{prop} args
+    {prop} args
+
+border-radius(n)
+    vendor(border-radius, n) // Example of mixins usage
+
+@keyframes spin
+    for i in 0 10
+        {10% * i}
+            vendor(transform, rotate((i*36)deg))
